@@ -1,0 +1,18 @@
+nav, ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+    font-weight: 600;
+}
+
+ul {
+    gap: 40px;
+}
+
+nav {
+    background-color: rgb(0, 213, 255);
+    padding: 20px;
+}
