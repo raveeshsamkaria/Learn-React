@@ -1,0 +1,21 @@
+*{
+    text-align: center;
+}
+
+h2 {
+    margin: 10px;
+}
+
+span {
+    margin: 10px;
+    font-weight: 600;
+}
+
+button {
+    padding: 5px;
+    text-align: center;
+    background-color: aquamarine;
+    border: 2px solid rgb(67, 136, 113);
+    border-radius: 8px;
+    cursor: pointer;
+}
