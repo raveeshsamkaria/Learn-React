@@ -1,10 +1,11 @@
 import Navbar from './Components/Navbar'
 // import Card from './Components/Card'
 // import Users from './Components/Users';
-import Counter from './Components/Counter'
-import Api from './Components/Api'
+// import Counter from './Components/Counter'
+// import Api from './Components/Api'
 import Footer from './Components/Footer'
-import { useState } from 'react'
+import Count from './Components/Count'
+// import { useState } from 'react'
 
 function App() {
   // const users = [
@@ -15,22 +16,23 @@ function App() {
   //   { id:4, name:"Bily", age:28, },
   // ];
 
-  const [state, setState] = useState(true)
+  // const [state, setState] = useState(true)
 
   return (
     <>
-      <Navbar />
-      {/* <div className="cards">
+      <Navbar />                              {/* Navbar Component */}
+      {/* <div className="cards"> 
         <Card title="Card1" price="$ 123" />
         <Card title="Card2" price="$ 456" />
         <Card title="Card3" price="$ 789" />
-      </div> */}
-      {/* <Users users={users} /> */}
-      {/* <Counter /> */}
-      <button onClick={() => setState(!state)}>Toggle</button>
-      {state ? <Counter /> : ""}
-      <Api />
-      <Footer />
+      </div> */}                              {/* Card Component */}
+      {/* <Users users={users} /> */}         {/* Users Component */}
+      {/* <Counter /> */}                     {/* useState & useEffect Hook */}
+      {/* <button onClick={() => setState(!state)}>Toggle</button>
+      {state ? <Counter /> : ""} */}          {/* useEffect Hook */}
+      {/* <Api /> */}                         {/* useEffect Hook */}
+      <Count />                               {/* useRef Hook */}
+      <Footer />                              {/* Footer Component */}
     </>
   )
 }

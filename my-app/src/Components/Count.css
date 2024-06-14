@@ -1,0 +1,23 @@
+* {
+    text-align: center;
+}
+
+.click {
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid rgb(149, 191, 240);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.block {
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: aquamarine;
+    border: 2px solid rgb(67, 136, 113);
+    border-radius: 8px;
+    cursor: pointer;
+}
