@@ -74,7 +74,7 @@ There are 3 rules for react hooks:
 ## What is useEffect() Hook?
 🔸 The useEffect in ReactJS is used to handle the side effects such as fetching data and updating DOM.
 
-🔹 This hook runs on every render but there is also a way of using a dependency array using which we can control the effect of rendering
+🔹 This hook runs on every render but there is also a way of using a dependency array using which we can control the effect of rendering.
 
 ### useEffect() Syntax
 ```sh
@@ -107,3 +107,12 @@ useEffect(() => {
   // And any time any dependency value changes
 }, [prop, state]);
 ```
+
+## What is useRef() Hook?
+🔸 The useRef() is a React Hook used to create a mutable reference that persists across renders. It returns a mutable object with a `.current` property, which can hold any value.
+
+🔹 Unlike state, changing the `.current` property doesn't trigger a re-render.
+
+🔸 It's commonly used to store and access values that need to persist between renders, such as accessing DOM elements imperatively, managing previous state values, or caching values across renders.
+
+🔹 Additionally, it's useful for accessing and modifying values within event handlers or effects without triggering re-renders.
