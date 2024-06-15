@@ -1,0 +1,13 @@
+.box1 {
+    width: 350px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: aquamarine;
+    border: 2px solid rgb(67, 136, 113);
+    border-radius: 8px;
+}
+
+.box1:hover {
+    background-color: rgb(250, 223, 214);
+}
