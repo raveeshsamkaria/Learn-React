@@ -66,13 +66,13 @@ There are 3 rules for react hooks:
 
 
 ## What is useState() Hook?
-🔸 The useState() hook in React allows functional components to manage state. It returns a stateful value and a function to update it.
+🔸 The `useState()` hook in React allows functional components to manage state. It returns a stateful value and a function to update it.
 
 🔹 This hook simplifies state management by eliminating the need for class components, making it easier to handle component state within functional components.
 
 
 ## What is useEffect() Hook?
-🔸 The useEffect in ReactJS is used to handle the side effects such as fetching data and updating DOM.
+🔸 The `useEffect()` in ReactJS is used to handle the side effects such as fetching data and updating DOM.
 
 🔹 This hook runs on every render but there is also a way of using a dependency array using which we can control the effect of rendering.
 
@@ -109,10 +109,24 @@ useEffect(() => {
 ```
 
 ## What is useRef() Hook?
-🔸 The useRef() is a React Hook used to create a mutable reference that persists across renders. It returns a mutable object with a `.current` property, which can hold any value.
+🔸 The `useRef()` is a React Hook used to create a mutable reference that persists across renders. It returns a mutable object with a `.current` property, which can hold any value.
 
 🔹 Unlike state, changing the `.current` property doesn't trigger a re-render.
 
 🔸 It's commonly used to store and access values that need to persist between renders, such as accessing DOM elements imperatively, managing previous state values, or caching values across renders.
 
 🔹 Additionally, it's useful for accessing and modifying values within event handlers or effects without triggering re-renders.
+
+
+## What is useContext() Hook?
+🔸 The `useContext()` is a React Hook used to consume context provided by a `Context.Provider` component.
+
+🔹 It allows functional components to access values from a context object without manually passing props down through each level of the component tree.
+
+🔸 By calling `useContext(MyContext)`, it retrieves the current context value for `MyContext`.
+
+🔹 When the context value updates, components using `useContext()` will re-render to reflect the most recent context value.
+
+🔸 This simplifies state management and avoids prop drilling, making it easier to share data across components that need it.
+
+![Context](./my-app/src/assets/context.png)
