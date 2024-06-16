@@ -130,3 +130,11 @@ useEffect(() => {
 🔸 This simplifies state management and avoids prop drilling, making it easier to share data across components that need it.
 
 ![Context](./my-app/src/assets/context.png)
+
+
+## What is useMemo() Hook?
+🔹 The `useMemo()` is a React hook used for memoizing expensive calculations so they are not recomputed on every render. It takes a function and an array of dependencies.
+
+🔸 When any dependency changes, the function re-runs, returning a cached result if dependencies haven't changed.
+
+🔹 This optimization can improve performance by avoiding unnecessary recalculations, making it ideal for optimizing components that rely on computationally expensive logic or data processing.
