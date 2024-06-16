@@ -4,10 +4,11 @@ import Navbar from './Components/Navbar'
 // import Counter from './Components/Counter'
 // import Api from './Components/Api'
 // import Count from './Components/Count'
-import Component1 from './Components/Component1'
+// import Component1 from './Components/Component1'
+import Memo from './Components/Memo'
 import Footer from './Components/Footer'
-import { counterContext } from "./Context/Counter"
-import { useState } from 'react'
+// import { counterContext } from "./Context/Counter"
+// import { useState } from 'react'
 
 function App() {
   // const users = [
@@ -19,11 +20,11 @@ function App() {
   // ];
 
   // const [state, setState] = useState(true)
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
-      <counterContext.Provider value={{count, setCount}}>               {/* Context Provider */}
+      {/* <counterContext.Provider value={{count, setCount}}> */}       {/* Context Provider */}
       <Navbar />                                                        {/* Navbar Component */}
       {/* <div className="cards"> 
         <Card title="Card1" price="$ 123" />
@@ -36,11 +37,12 @@ function App() {
       {state ? <Counter /> : ""} */}                                    {/* useEffect() Hook */}
       {/* <Api /> */}                                                   {/* useEffect() Hook */}
       {/* <Count /> */}                                                 {/* useRef() Hook */}
-      <h2>{count}</h2>
-      <button onClick={() => {setCount((count) => count + 1)}}>Click Me</button><br />
-      <Component1 />                                                    {/* useContext() Hook */}
+      {/* <h2>{count}</h2>
+      <button onClick={() => {setCount((count) => count + 1)}}>Click Me</button><br /> */}
+      {/* <Component1 /> */}                                            {/* useContext() Hook */}
+      <Memo />                                                          {/* useMemo() Hook */}
       <Footer />                                                        {/* Footer Component */}
-      </counterContext.Provider>
+      {/* </counterContext.Provider> */}
     </>
   )
 }
