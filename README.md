@@ -138,3 +138,15 @@ useEffect(() => {
 🔸 When any dependency changes, the function re-runs, returning a cached result if dependencies haven't changed.
 
 🔹 This optimization can improve performance by avoiding unnecessary recalculations, making it ideal for optimizing components that rely on computationally expensive logic or data processing.
+
+
+## What is useCallback() Hook?
+🔸 The `useCallback()` is a React hook that memoizes a callback function, returning a memoized version that only changes if its dependencies change.
+
+🔹 This optimization is useful for performance, preventing unnecessary re-renders of child components that rely on callback props.
+
+🔸 It's particularly beneficial when passing callbacks to optimized child components or using in `useEffect()` to optimize event handlers or subscriptions.
+
+🔹 Usage involves specifying dependencies in an array; changes in these dependencies trigger the creation of a new callback or reuse of the existing one. 
+
+🔸 Thus, `useCallback()` enhances efficiency by maintaining stable references to functions across renders, improving overall application performance.
