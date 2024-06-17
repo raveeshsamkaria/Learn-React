@@ -5,10 +5,11 @@ import Navbar from './Components/Navbar'
 // import Api from './Components/Api'
 // import Count from './Components/Count'
 // import Component1 from './Components/Component1'
-import Memo from './Components/Memo'
+// import Memo from './Components/Memo'
+import Callback from './Components/Callback'
 import Footer from './Components/Footer'
 // import { counterContext } from "./Context/Counter"
-// import { useState } from 'react'
+import { useState, useCallback } from 'react'
 
 function App() {
   // const users = [
@@ -20,7 +21,12 @@ function App() {
   // ];
 
   // const [state, setState] = useState(true)
-  // const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0)
+  const [add, setAdd] = useState(0)
+
+  const calculate = useCallback(() => {
+    // Doing some calculations
+  }, [add])                                                             // Memoized Callback Function
 
   return (
     <>
@@ -40,7 +46,12 @@ function App() {
       {/* <h2>{count}</h2>
       <button onClick={() => {setCount((count) => count + 1)}}>Click Me</button><br /> */}
       {/* <Component1 /> */}                                            {/* useContext() Hook */}
-      <Memo />                                                          {/* useMemo() Hook */}
+      {/* <Memo /> */}                                                  {/* useMemo() Hook */}
+      <h1>{count}</h1>
+      <button onClick={() => {setCount((count) => count + 1)}}>Click Me</button><br />
+      <Callback calculate={calculate} />                                {/* useCallback() Hook */}
+      <h1>{add}</h1>
+      <button onClick={() => {setAdd((add) => add + 1)}}>Addition</button>
       <Footer />                                                        {/* Footer Component */}
       {/* </counterContext.Provider> */}
     </>
