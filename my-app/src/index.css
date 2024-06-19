@@ -17,3 +17,17 @@ button {
   border-radius: 8px;
   cursor: pointer;
 }
+
+h3 {
+  margin: 10px auto;
+}
+
+.box {
+  width: 200px;
+  margin: 10px auto;
+  background-color: rgb(145, 145, 145);
+  color: white;
+  padding: 50px 0;
+  border: 2px solid rgb(67, 136, 113);
+  text-align: center;
+}

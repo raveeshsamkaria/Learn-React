@@ -1,15 +1,16 @@
 import Navbar from './Components/Navbar'
 // import Card from './Components/Card'
 // import Users from './Components/Users';
-import Counter from './Components/Counter'
+// import Counter from './Components/Counter'
 // import Api from './Components/Api'
 // import Count from './Components/Count'
 // import Component1 from './Components/Component1'
 // import Memo from './Components/Memo'
 // import Callback from './Components/Callback'
+import Event from './Components/Event'
 import Footer from './Components/Footer'
 // import { counterContext } from "./Context/Counter"
-import { useState } from 'react'
+// import { useState } from 'react'
 // import { useCallback } from 'react'
 
 function App() {
@@ -21,13 +22,13 @@ function App() {
   //   { id:4, name:"Bily", age:28, },
   // ];
 
-  const [state, setState] = useState(true)
+  // const [state, setState] = useState(true)
   // const [count, setCount] = useState(0)
   // const [add, setAdd] = useState(0)
 
   // const calculate = useCallback(() => {
     // Doing some calculations
-  // }, [add])                                                             // Memoized Callback Function
+  // }, [add])                                                           // Memoized Callback Function
 
   return (
     <>
@@ -53,8 +54,9 @@ function App() {
       {/* <Callback calculate={calculate} /> */}                        {/* useCallback() Hook */}
       {/* <h1>{add}</h1>
       <button onClick={() => {setAdd((add) => add + 1)}}>Addition</button> */}
-      <button onClick={() => setState(!state)}>Toggle</button> <br />
-      {state ? <Counter /> : "Nothing to Display"} <br />
+      {/* <button onClick={() => setState(!state)}>Toggle</button> <br />
+      {state ? <Counter /> : "Nothing to Display"} <br /> */}           {/* Conditional Rendering */}
+      <Event />
       <Footer />                                                        {/* Footer Component */}
       {/* </counterContext.Provider> */}
     </>
