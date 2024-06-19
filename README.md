@@ -233,3 +233,15 @@ const memoizedCallback = useCallback(() => {
 - By `If Else Statement`
 - By `Logical && Operator`
 - By `Ternary Operator`
+
+
+##  🤔 Explain Event Handling in React JS?
+🔸 An event is an action or occurrence recognized by software or a program that can be responded to or handled by the system.
+
+🔹 In the context of React, events refer to the actions performed by a user or a program that triggers a response in a React component.
+
+🔸 Event handling in React involves attaching event listeners to DOM elements and invoking callback functions when events (such as clicks or keystrokes) occur.
+
+🔹 Handlers are typically defined as methods within React components and passed to elements using JSX. Event objects (`e`) are passed to handlers, allowing access to event details.
+
+🔸 React efficiently manages event delegation and synthetic events, enhancing performance and simplifying cross-browser compatibility for web applications.
