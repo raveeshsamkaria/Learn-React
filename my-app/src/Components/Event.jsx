@@ -1,18 +1,21 @@
 import { useState } from 'react'
 
 const Event = () => {
+    // Click Event
     const handleClick = () => {
         alert("Button is Clicked")
     }
 
+    // Mouse Event
     const handleMouseOver = () => {
         alert("Mouse on Box")
     }
     
     const [name, setName] = useState("JavaScript")
     
+    // Input Event
     const handleChange = (e) => {
-    setName(e.target.value)
+        setName(e.target.value)
     }
 
     return (

@@ -56,7 +56,7 @@ function App() {
       <button onClick={() => {setAdd((add) => add + 1)}}>Addition</button> */}
       {/* <button onClick={() => setState(!state)}>Toggle</button> <br />
       {state ? <Counter /> : "Nothing to Display"} <br /> */}           {/* Conditional Rendering */}
-      <Event />
+      <Event />                                                         {/* Event Handling */}
       <Footer />                                                        {/* Footer Component */}
       {/* </counterContext.Provider> */}
     </>
