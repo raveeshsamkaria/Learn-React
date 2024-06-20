@@ -16,3 +16,7 @@ nav {
     background-color: rgb(0, 213, 255);
     padding: 20px;
 }
+
+.active {
+    color: red;
+}
