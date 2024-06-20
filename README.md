@@ -245,3 +245,9 @@ const memoizedCallback = useCallback(() => {
 🔹 Handlers are typically defined as methods within React components and passed to elements using JSX. Event objects (`e`) are passed to handlers, allowing access to event details.
 
 🔸 React efficiently manages event delegation and synthetic events, enhancing performance and simplifying cross-browser compatibility for web applications.
+
+
+## 🤔 What is React Router?
+🔹 React Router is a library for routing in React applications, enabling navigation between different views/components. It allows defining routes with components to render based on the URL.
+
+🔸 It manages URL updates, supports nested routes, and facilitates dynamic routing with params. React Router ensures a smooth, SPA-like user experience by synchronizing UI with URL changes, making it essential for single-page applications (SPAs) built with React.
