@@ -8,6 +8,7 @@ import Navbar from './Components/Navbar'
 // import Memo from './Components/Memo'
 // import Callback from './Components/Callback'
 // import Event from './Components/Event'
+import Form from './Components/Form'
 import Footer from './Components/Footer'
 // import { counterContext } from "./Context/Counter"
 // import { useState } from 'react'
@@ -57,7 +58,8 @@ function App() {
       {/* <button onClick={() => setState(!state)}>Toggle</button> <br />
       {state ? <Counter /> : "Nothing to Display"} <br /> */}           {/* Conditional Rendering */}
       {/* <Event /> */}                                                 {/* Event Handling */}
-      <h1>Home</h1>
+      {/* <h1>Home</h1> */}
+      <Form />
       <Footer />                                                        {/* Footer Component */}
       {/* </counterContext.Provider> */}
     </>
