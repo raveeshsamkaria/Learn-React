@@ -13,6 +13,10 @@
 
 🔸 It supports various frameworks like React, Vue, and others, offering a streamlined development experience with features like hot module replacement. Ideal for rapid prototyping and building performant web applications.
 
+```sh
+$ npm create vite@latest
+```
+
 
 ## 🤔 What is Components?
 🔹 React Components are the building block of React Application. They are the reusable code blocks containing logic and UI elements.
@@ -251,3 +255,21 @@ const memoizedCallback = useCallback(() => {
 🔹 React Router is a library for routing in React applications, enabling navigation between different views/components. It allows defining routes with components to render based on the URL.
 
 🔸 It manages URL updates, supports nested routes, and facilitates dynamic routing with params. React Router ensures a smooth, SPA-like user experience by synchronizing UI with URL changes, making it essential for single-page applications (SPAs) built with React.
+
+```sh
+$ npm install react-router-dom
+```
+
+
+## 🤔 What is React Hook Form?
+🔹 React Hook Form is a library that helps you validate forms in React. It is a minimal library without any other dependencies, while being performant and straightforward to use, requiring developers to write fewer lines of code than other form libraries.
+
+🔸 React Hook Form takes a slightly different approach than other form libraries in the React ecosystem by adopting the use of uncontrolled inputs using `ref` instead of depending on the state to control the inputs. This approach makes the forms more performant and reduces the number of re-renders.
+
+🔹 The package size is tiny and it has zero dependencies. The API is very intuitive, which provides a seamless experience to developers. React Hook Form follows HTML standards for validating the forms using a constraint-based validation API.
+
+🔸 Another great feature offered by React Hook Form is its painless integration with UI libraries because most libraries support the `ref` attribute.
+
+```sh
+$ npm install react-hook-form
+```
