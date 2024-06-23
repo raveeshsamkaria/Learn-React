@@ -3,3 +3,23 @@ body {
     padding: 20px;
     background-color: whitesmoke;
 }
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navLink {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+}

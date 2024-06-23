@@ -1,11 +1,11 @@
 const Navbar = () => {
     return (
-        <div>
-            <span>Redux Tutorial</span>
+        <div className='nav'>
+            <span style={{fontWeight:"bold"}}>Redux Tutorial</span>
             <ul>
-                <li>Home</li>
-                <li>Cart</li>
-                <li>Items: 0</li>
+                <li className='navLink'>Home</li>
+                <li className='navLink'><i className="fa-solid fa-cart-shopping"></i></li>
+                <li className='navLink'>Items: 0</li>
             </ul>
         </div>
     )
