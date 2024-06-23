@@ -12,11 +12,6 @@ body {
     padding: 10px;
 }
 
-ul {
-    list-style-type: none;
-    display: flex;
-}
-
 .navLink {
     text-decoration: none;
     color: black;
