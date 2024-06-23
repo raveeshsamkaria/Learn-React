@@ -273,3 +273,23 @@ $ npm install react-router-dom
 ```sh
 $ npm install react-hook-form
 ```
+
+
+## 🤔 What is Redux?
+🔹 Redux is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments, and are easy to test.
+
+🔸 While it’s mostly used as a state management tool with React, you can use Redux with any other JavaScript framework or library. It’s lightweight at 2KB (including dependencies), so you don’t have to worry about it making your application’s asset size bigger.
+
+🔹 With Redux, the state of your application is kept in a store, and each component can access any state that it needs from this store. 
+
+```sh
+$ npm install @reduxjs/toolkit react-redux
+```
+
+
+## 🤔 What is Redux used for?
+🔸 Redux is used to maintain and update data across your applications for multiple components to share, all while remaining independent of the components.
+
+🔹 In a large application, there is a need to store the state at a central location and share it among the different components. That is where the Redux store comes into the picture.
+
+🔸 If the data needs to be passed from a parent to a child deep down the tree, this can still be accomplished using React utilities like Context. But when it comes to sharing the state between components on the same level, Redux is the inevitable option.
