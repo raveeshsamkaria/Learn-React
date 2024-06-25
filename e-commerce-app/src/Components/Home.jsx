@@ -12,7 +12,6 @@ const Home = () => {
         fetchProduct()
         }, [])
 
-
     return (
         <div className='productWrapper'>
             {
