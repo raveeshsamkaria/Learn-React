@@ -293,3 +293,27 @@ $ npm install @reduxjs/toolkit react-redux
 🔹 In a large application, there is a need to store the state at a central location and share it among the different components. That is where the Redux store comes into the picture.
 
 🔸 If the data needs to be passed from a parent to a child deep down the tree, this can still be accomplished using React utilities like Context. But when it comes to sharing the state between components on the same level, Redux is the inevitable option.
+
+
+## 🤔 Redux Terminologies
+🔹 Action - Redux actions are events. They are the only way you can send data from your application to your Redux store. The data can be from user interactions, API calls, or even form submissions.
+
+Actions are plain JavaScript objects that must have:
+- A `type` property to indicate the type of action to be carried out. This is a mandatory field.
+- A `payload` object that contains the information that should be used to change the state.
+
+Actions are created via an action creator, which is a function that returns an action.
+
+🔸 Dispatcher - It is Redux store function that is used to dispatch the actions. The only way to send actions is via the dispatcher function.
+
+🔹 Reducers - It is pure functions that take the current state of an application, perform an action, and return a new state. The reducer handles how the state (application data) will change in response to an action.
+
+- _A `pure function` is a function that will always return the same value if given the same parameters, i.e., the function depends on only the parameters and no external data._
+
+- Reducers are based on the reduce function in JavaScript, where a single value is calculated from multiple values after a callback function has been carried out.
+
+- _Reducers take the previous state of the app and return a new state based on the action passed to it. As pure functions, they do not change the data in the object passed to them or perform any side effect in the application. Given the same object, they should always produce the same result._
+
+🔸 Store - The store is a “container” (really, a JavaScript object) that holds the application state, and the only way the state can change is through actions dispatched to the store. Redux allows individual components to connect to the store.
+
+🔹 Selector - The state of an app can be complex. We might not need entire state every time. We might need to access only a certain part of the state. Selector is a function which helps us to extract the exact value we need from the state.
