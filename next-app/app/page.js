@@ -1,6 +1,11 @@
+"use client"
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [count, setCount] = useState(0)
+  
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -39,8 +44,16 @@ export default function Home() {
         />
       </div>
 
-      <div className="m-3 text-center group rounded-lg border border-transparent px-5 py-4 transition-colors border-gray-50 hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+      <div className="m-3 text-center group rounded-lg border px-5 py-4 transition-colors border-gray-50 hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
         <p className="p-1 text-2xl font-semibold">Hello World</p>
+      </div>
+
+      <div className="m-2 p-5 text-center border border-neutral-500 rounded-lg">
+        <p className="mb-2 text-2xl">Counter</p>
+        <p className="mb-2 font-semibold">{count}</p>
+        <button className="m-1 p-2 border border-green-500 rounded-lg hover:bg-green-900" onClick={() => setCount((count) => count + 1)}>Increase</button> &nbsp;&nbsp;
+        <button className="m-1 p-2 border border-red-500 rounded-lg hover:bg-red-900" onClick={() => setCount((count) => count - 1)}>Decrease</button> &nbsp;&nbsp;
+        <button className="m-1 p-2 border border-blue-500 rounded-lg hover:bg-blue-900" onClick={() => setCount(0)}>Reset</button>
       </div>
     </main>
   );
